@@ -3,13 +3,10 @@
 @import "typography";
 
 $colorBody:  #E0FFFF;
-$colorHeadline: #7CFC00; 
 $colorBorder: #483D8B;
 $buttonHoverBG: #FFFACD;
 $buttonShadow: #3498db;
-$colorTextButton: red;
 $colorBorderButton: blue;
-$buttonBG: #AFEEEE;
 
 html,
 body{
@@ -21,21 +18,29 @@ body{
   width: 55%; 
   height: 65%;
   margin-left: 20%;
-  /*display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;*/
+  align-items: center;
 }
 .headline{
-font-family: "Bebas Neue";
-color: $colorHeadline;
+color: $colorBorder;
 font-size:35px;
 text-align: center;
 margin:1.5%;
+font-size: 32px;
+font-family:"Prata";
+text-shadow: 2px 2px 2px $buttonShadow;
 }
 .carousel{
   width: 100%; 
   height: 100%;
+  img{
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
 }
+
 .slide{
   width: 100%; 
   height: 100%;
@@ -43,26 +48,24 @@ margin:1.5%;
   border: 3px $colorBorder solid;
 }
 .buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   #button-right{
-    color: $colorTextButton;
-    background: $buttonBG;
     right:0;
-    border: 3px solid $colorBorderButton;
-    width:20%;
-    float: left; 
-    margin-left:35%;
-    text-align: center;   
-    margin-top: 2%;
+    color:$colorBorderButton;
+    font-size: 30px;
+    width:5%;
+    margin-top: -62%;
   }
   #button-left{
-    background: $buttonBG;
-    color: $colorTextButton;
     left:0;
-    border: 3px solid $colorBorderButton;
-    width:20%;
-    text-align: center;
-    float: left; 
-    margin-top: 2%;
+    color:$colorBorderButton;
+    font-size: 30px;
+    width:5%;
+    margin-top: -62%;
+    margin-left: 93%;
   }
 }
 #button-right:hover {
